@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgb(32, 32, 32);
+    background: rgb(32, 32, 32);
     width: 200px;
     height: 100vh;
     position: fixed;
@@ -10,7 +10,8 @@
 }
 
 .logoBox {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    margin-top: 10px;
 }
 
 .logo {
@@ -37,9 +38,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 115px;
-    border-bottom: 1px solid #e29a3d;
+    width: 120px;
+    height: 120px;
+    border-bottom: 1px solid #e29a3d5b;
     overflow: hidden;
     position: relative;
 }
@@ -49,14 +50,21 @@
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: -30px;
+    transition: all ease .3s;
+}
+
+.navList li a:hover {
+    color: #f4ab4f;
 }
 
 .navList li .icon {
     color: white;
     font-size: 40px;
     color: #f4ab4f;
+    cursor: pointer;
     margin-bottom: 10px;
+}
+
+.navList .last {
+    border: none;
 }
