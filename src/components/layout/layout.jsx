@@ -1,20 +1,18 @@
 import React from "react";
-import Navbar from "../pages/Navbar";
+import Container from "../container/container";
 import Header from "../pages/Header";
 import styles from "../layout/layout.module.css";
+import Navbar from "../pages/Navbar";
 
 function Layout() {
   return (
-    <div className="relative flex w-full h-screen">
-      <div className="sideBar bg-yellow-400 min-h-full w-[200px] overflow-auto">
+    <main className={`${styles.main} relative`}>
+      <Container>
         <Navbar />
-      </div>
-      <main
-        className={`${styles.main} flex-1 min-h-full flex flex-col px-[50px]`}
-      >
         <Header />
-      </main>
-    </div>
+        <Header />
+      </Container>
+    </main>
   );
 }
 

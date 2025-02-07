@@ -5,7 +5,6 @@
     height: 100vh;
     padding: 50px 0;
     overflow: hidden;
-    /* color: #f4ab4f; */
 }
 
 @keyframes hi {
@@ -90,6 +89,30 @@
     }
 }
 
+.textWrap {
+    width: 50%;
+    height: 100%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.imgWrap {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgWrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    transition: all ease;
+}
+
 .hi {
     color: white;
     font-size: 40px;
@@ -138,4 +161,67 @@
 .icons:hover {
     background-color: #f4ab4f;
     color: white;
+}
+
+
+@media (max-width: 1399.98px) {
+    .header .name {
+        font-size: 66px;
+    }
+
+    .textWrap {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .header .name {
+        font-size: 55px;
+    }
+
+    .typer {
+        font-size: 18px;
+    }
+
+    .para {
+        font-size: 14px;
+    }
+
+    .textWrap {
+        width: 55%;
+    }
+
+    .imgWrap {
+        width: 45%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .textWrap,
+    .imgWrap {
+        width: 100%;
+    }
+
+    .textWrap {
+        text-align: center;
+        align-items: center;
+    }
+
+    .imgWrap img {
+        height: 116%;
+    }
+}
+
+@media (max-width: 575px) {
+    .name {
+        font-size: 45px;
+    }
+
+    .hi {
+        font-size: 36px;
+    }
 }

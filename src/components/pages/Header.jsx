@@ -24,7 +24,7 @@ function Header() {
   return (
     <div>
       <div className={styles.header}>
-        <div className="textWrap w-[50%] h-full flex flex-col justify-center items-start ps-[80px]">
+        <div className={styles.textWrap}>
           <motion.h2
             className={styles.hi}
             variants={moveVarients}
@@ -95,40 +95,23 @@ function Header() {
                 Reach Out
               </span>
             </Link>
-            <motion.Link
-              className={styles.icons}
-              whileHover={{
-                y: -10
-              }}
-            >
+            <motion.Link className={styles.icons} whileHover={{ y: -10 }}>
               <FaLinkedinIn className=" text-lg" />
             </motion.Link>
-            <motion.Link
-              className={styles.icons}
-              whileHover={{
-                y: -10
-              }}
-            >
+            <motion.Link className={styles.icons} whileHover={{ y: -10 }}>
               <FaFacebookF className=" text-lg" />
             </motion.Link>
-            <motion.Link
-              className={styles.icons}
-              whileHover={{
-                y: -10
-              }}
-            >
+            <motion.Link className={styles.icons} whileHover={{ y: -10 }}>
               <FiGithub className=" text-lg" />
             </motion.Link>
           </motion.div>
         </div>
-        <div className="imgWrap w-[50%] h-full overflow-hidden">
+        <div className={styles.imgWrap}>
           <motion.img
             src={img1}
-            alt=""
-            className="w-full h-full object-contain object-center transition-all"
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "spring", stiffness: 100, duration: 2.5 }}
+            transition={{ type: "spring", stiffness: 100, duration: 3.5 }}
           />
         </div>
       </div>
